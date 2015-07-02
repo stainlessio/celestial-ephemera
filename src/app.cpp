@@ -1,7 +1,4 @@
-#include "cinder/app/App.h"
-#include "cinder/app/RendererGl.h"
-#include "cinder/gl/gl.h"
-#include "cinder/gl/Texture.h"
+#include "cinder/app/AppBasic.h"
 
 #include <memory>
 
@@ -10,16 +7,11 @@ using namespace ci::app;
 using namespace std;
 
 // We'll create a new Cinder Application by deriving from the App class
-class BasicApp : public App
+class BasicApp : public AppBasic
 {
 public:
-    void setup() override;
     void draw() override;
 };
-
-void BasicApp::setup()
-{
-}
 
 void BasicApp::draw()
 {
@@ -27,4 +19,4 @@ void BasicApp::draw()
 }
 
 // This line tells Cinder to actually create the application
-CINDER_APP( BasicApp, RendererGl )
+CINDER_APP_BASIC( BasicApp, RendererGl )
