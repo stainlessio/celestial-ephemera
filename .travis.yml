@@ -1,0 +1,8 @@
+language: objective-c
+before_install:
+  - sudo apt-get update -qq
+before_script:
+  - mkdir build
+  - cd build && cmake -G Xcode ..
+xcode_project: build/celestial.xcodeproj
+xcode_scheme: ALL_BUILD
