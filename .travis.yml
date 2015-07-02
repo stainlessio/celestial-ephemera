@@ -2,10 +2,7 @@ language: objective-c
 before_script:
   - brew update && brew install tbb
   - mkdir build
-  - cd build && cmake -G Xcode ..
-  - pwd
-  - find .
-after_script:
-  - echo "success"
-xcode_project: build/celestial.xcodeproj
+  - cd build
+  - cmake -G Xcode ..
+xcode_project: celestial.xcodeproj
 xcode_scheme: ALL_BUILD
