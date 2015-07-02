@@ -4,5 +4,7 @@ before_install:
 before_script:
   - mkdir build
   - cd build && cmake -G Xcode ..
+after_script:
+  - echo "success"
 xcode_project: build/celestial.xcodeproj
 xcode_scheme: ALL_BUILD
