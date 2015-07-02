@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 PROJECT (celestial)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}
     "${CMAKE_SOURCE_DIR}/CMake/"
+    "${CMAKE_SOURCE_DIR}/cmake-toolkit/"
 )
 
 include("Version")
