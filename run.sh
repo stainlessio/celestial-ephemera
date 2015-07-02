@@ -1,5 +1,5 @@
 if [ ! -x build-Ninja ]; then
-  update.sh
+  ./update.sh
 fi
 
 cd build-Ninja && ninja && ./bin/celestial
