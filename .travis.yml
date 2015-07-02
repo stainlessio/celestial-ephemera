@@ -1,5 +1,6 @@
 language: objective-c
 before_script:
+  - brew update && brew install tbb
   - mkdir build
   - cd build && cmake -G Xcode ..
 after_script:
