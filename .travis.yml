@@ -1,9 +1,0 @@
-language: c++
-before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install ninja
-before_script:
-  - mkdir build
-  - cd build && cmake -G Ninja ..
-script: cd build && ninja
-  
