@@ -2,7 +2,8 @@ language: objective-c
 before_script:
   - brew update
   - brew install tbb ninja
-  - brew install -f cmake
+  - brew unlink cmake
+  - brew install cmake
   - mkdir build
   - cd build
   - cmake -G Ninja ..
