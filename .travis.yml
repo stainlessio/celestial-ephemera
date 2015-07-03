@@ -4,6 +4,6 @@ before_script:
   - mkdir build
   - cd build
   - cmake -G Xcode ..
-  - cp -R ../support/xcode/xcshareddata celestial.xcodeproj/
+  - ../support/xcode/generate_schemes.sh
 xcode_project: celestial.xcodeproj
 xcode_scheme: ALL_BUILD
