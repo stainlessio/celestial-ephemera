@@ -1,9 +1,9 @@
 language: objective-c
 before_script:
-  - brew update && brew install tbb
+  - brew update
+  - brew install tbb ninja
+  - brew install -f cmake
   - mkdir build
   - cd build
-  - cmake -G Xcode ..
-  - ../support/xcode/generate_schemes.sh
-xcode_project: celestial.xcodeproj
-xcode_scheme: ALL_BUILD
+  - cmake -G Ninja ..
+script: ninja
