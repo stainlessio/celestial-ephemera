@@ -3,7 +3,8 @@ before_script:
   - brew update && brew install tbb
   - mkdir build
   - cd build
-  - cp -R ../support/xcode/xcshareddata celestial.xcodeproj/
+  - mkdir celestial.xcodeprof/xcshareddata
+  - cp -R ../support/xcode/xcshareddata celestial.xcodeproj/xcshareddata
   - find celestial.xcodeproj
   - cmake -G Xcode ..
 xcode_project: celestial.xcodeproj
