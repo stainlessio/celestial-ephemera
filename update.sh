@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # PROJECTS="Xcode Ninja"  # Uncomment to also generate xcode projects
-PROJECTS="Ninja"
+PROJECTS="Ninja Xcode"
 export CINDER_ROOT="support/cinder-latest"
 
 for n in $PROJECTS

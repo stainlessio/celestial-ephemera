@@ -22,6 +22,8 @@ message(STATUS "cinder = ${Cinder_FOUND}")
 find_package(TBB REQUIRED)
 include_directories(${TBB_INCLUDE_DIR})
 
+find_library(BLUETOOTH_LIBRARY CoreBluetooth)
+
 add_definitions(-std=c++11)
 
 LINK_DIRECTORIES(
